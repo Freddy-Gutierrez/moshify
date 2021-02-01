@@ -338,6 +338,12 @@ a {
   font-style: normal;
   opacity: 0.4;
 }
+
+/* grid */
+.grid {
+  display: grid;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -389,5 +395,14 @@ a {
   }
   .quote__company {
     font-size: 1.6rem;
+  }
+  .grid--cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
