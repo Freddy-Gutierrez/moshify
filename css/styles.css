@@ -278,11 +278,19 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #0dbedd;
 }
 
 /* plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -322,6 +330,14 @@ a {
   right: 5%;
   top: -6px;
   width: 40px;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.1);
 }
 
 /* media */
@@ -566,6 +582,16 @@ a {
   max-width: 700px;
 }
 
+/* plan block */
+.block-plan .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plan .card {
+  max-width: 500px;
+  margin: auto;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -633,6 +659,13 @@ a {
   }
   .nav__item {
     border: 0;
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
+  .plan--popular:hover {
+    transform: scale(1.15);
   }
 }
 
